@@ -32,5 +32,29 @@
 
 .question {
   width: 400px;
-  font-size: larger;
+  font-size: 26;
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: 400;
+}
+
+.welcome {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: 900;
+  font-size: 55;
+}
+
+.score {
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: 400;
+  font-size: 30;
+}
+
+.message {
+  margin-bottom: 40px;
 }

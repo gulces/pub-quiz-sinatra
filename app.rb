@@ -41,6 +41,15 @@ post "/quiz/:id" do
     if @answered_question["answer"] == params[:selected_answer]
       @score += 1
     end
+
+    case @score
+    when 0
+      @message = "Better luck next time!"
+    when 1 || 2
+      @message = "Well Done!"
+    when 3
+      @message = "You nailed it!"
+    end
   end
 
   if @question
