@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>the quiz</h1>
+  <% if @feedback %>
+   <p><%= @feedback %></p>
+  <% end %>
+  <%= @question["question"] %>
+  <% @question["options"].each do |option| %>
+    <form method="POST" action="/quiz/<%= params[:id].to_i + 1 %>">
+      <p><%= option["id"] %>. <%= option["text"] %></p>
+      <input type="submit" name="<% option["id"] %>">
+      <input type="hidden" name="selected_answer" value="<%= option["id"] %>">
+      <input type="hidden" name="question_id" value="<%= params[:id] %>">
+      <input type="hidden" name="score" value="<%= @score %>">
+    </form>
+  <% end %>
+</div>
