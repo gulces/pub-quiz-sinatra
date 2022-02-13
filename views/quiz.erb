@@ -1,16 +1,15 @@
-<div class="container">
-  <h1>the quiz</h1>
-  <% if @feedback %>
-   <p><%= @feedback %></p>
-  <% end %>
-  <%= @question["question"] %>
-  <% @question["options"].each do |option| %>
-    <form method="POST" action="/quiz/<%= params[:id].to_i + 1 %>">
-      <p><%= option["id"] %>. <%= option["text"] %></p>
-      <input type="submit" name="<% option["id"] %>">
-      <input type="hidden" name="selected_answer" value="<%= option["id"] %>">
-      <input type="hidden" name="question_id" value="<%= params[:id] %>">
-      <input type="hidden" name="score" value="<%= @score %>">
-    </form>
-  <% end %>
+<div class="card-container">
+  <div class="card-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../stylesheets/images/pub-quiz.jpeg)">
+    <h1 class="question"><%= @question["question"] %></h1>
+    <div class="options">
+      <% @question["options"].each do |option| %>
+        <form method="POST" action="/quiz/<%= params[:id].to_i + 1 %>">
+          <input type="submit" name="<% option["id"] %>" value="<%= option["text"] %>" class="btn-gradient option">
+          <input type="hidden" name="selected_answer" value="<%= option["id"] %>">
+          <input type="hidden" name="question_id" value="<%= params[:id] %>">
+          <input type="hidden" name="score" value="<%= @score %>">
+        </form>
+      <% end %>
+    </div>
+  </div>
 </div>

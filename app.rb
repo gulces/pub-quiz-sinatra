@@ -40,9 +40,6 @@ post "/quiz/:id" do
     @answered_question = quiz[params[:id].to_i - 1]
     if @answered_question["answer"] == params[:selected_answer]
       @score += 1
-      @feedback = "Yay! You got it right"
-    else
-      @feedback = "Better luck next time :("
     end
   end
 
