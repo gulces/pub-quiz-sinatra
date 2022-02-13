@@ -45,8 +45,10 @@ post "/quiz/:id" do
     case @score
     when 0
       @message = "Better luck next time!"
-    when 1 || 2
-      @message = "Well Done!"
+    when 1
+      @message = "Good effort!"
+    when 2
+      @message = "Well done!"
     when 3
       @message = "You nailed it!"
     end
