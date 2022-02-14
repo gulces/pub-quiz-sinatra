@@ -1,5 +1,5 @@
 # Pub Quiz
-Few things in life can beat good times with friends - especially if it involves sharing a pint over a pub quiz! During these ✨unprecedented times✨ it can be a challenge to get loved ones together. That's why I brought the pub quiz to you! Anytime, anywhere - just grab a beverage and settle in for some trivia fun.
+Few things in life can beat good times with friends - especially if it involves sharing a pint over a pub quiz! During these ✨unprecedented times✨ it can be a challenge to get loved ones together. That's why I brought the pub quiz to you! Anytime, anywhere - just grab your favourite beverage and settle in for some trivia fun.
 
 <br>
 
