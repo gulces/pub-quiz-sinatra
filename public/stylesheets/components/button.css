@@ -27,9 +27,10 @@
   font-weight: 300;
 }
 
-.restart {
-  font-size: medium;
-  margin-top: 20px;
+#restart {
+  margin-top: -4px;
+  margin-bottom: -60px;
+  font-size: 24px;
 }
 
 
@@ -47,21 +48,6 @@
 *::after {
   box-sizing: border-box;
 }
-
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-} */
 
 .glowing-btn {
   position: relative;
@@ -131,7 +117,7 @@ body {
 }
 
 .glowing-btn:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(1, 8, 17, 0.8);
   text-shadow: none;
   animation: none;
 }
