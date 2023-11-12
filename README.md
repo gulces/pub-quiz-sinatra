@@ -9,11 +9,12 @@ Create a prototype system for an online pub quiz. Users will be presented with q
 <br>
 
 ## How To Run
-As this project is in Ruby, you need to make sure you have Ruby installed. You can run the command:
+<br>
+
+As this project is in Ruby, you need to make sure you have Ruby installed. You can run the command below, which should return the version of Ruby if you have it installed.
 ```
 ruby -v
 ```
-Which should return the version of Ruby if you have it installed.
 <br>
 <br>
 
@@ -23,18 +24,79 @@ mkdir ~/$GITHUB_USERNAME/pub-quiz-sinatra
 cd ~/$GITHUB_USERNAME/pub-quiz-sinatra
 ```
 <br>
+<br>
 
 Clone the project repository.
 ```
 git clone git@github.com:gulces/pub-quiz-sinatra.git
 ```
 <br>
+<br>
 
-Make sure you have the [bundler](https://bundler.io/) gem installed. To install the dependencies, run the command:
+Make sure you have the [bundler](https://bundler.io/) gem installed.
+```
+gem install bundler
+```
+<br>
+<details>
+  <summary>    💡 Troubleshooting: If you run into any problems at this step refer here for a possible solution.</summary>
+<br>
+  
+  ## Gem Installation Error
+
+If you encounter the following error:
+
+```
+Fetching bundler-2.2.28.gem
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
+```
+<br>
+
+This might indicate that you don't have the necessary permissions to write to the directory where RubyGems is trying to install the bundler gem. This is a common issue when installing gems on a system-wide Ruby installation, and it typically requires administrator or superuser privileges.
+<br>
+<br>
+
+Instead of modifying system directories, consider using a gem environment to manage your Ruby dependencies.
+<br>
+<br>
+
+#### 1. Create and navigate to a directory for your gem environment
+
+```
+mkdir ~/my_ruby_gems
+cd ~/my_ruby_gems
+```
+<br>
+
+#### 2. Set the GEM_HOME and GEM_PATH environment variables to point to your new gem environment:
+
+```
+export GEM_HOME=$PWD
+export GEM_PATH=$PWD
+```
+<br>
+
+#### 3. You can now install gems, and they will be installed in the isolated environment without interfering with your system-wide Ruby installation or other gem environments.
+
+```
+gem install bundler
+```
+<br>
+Remember that these environment variables are only set for the current terminal session. If you close the terminal or open a new one, you'll need to set these variables again if you want to work in the same isolated gem environment.
+<br>
+<br>
+    
+---
+
+</details>
+<br>
+<br>
+
+To install the dependencies, run this command in the root directory of the project:
 ```
 bundle install
 ```
-in the root directory of the project.
 <br>
 <br>
 
