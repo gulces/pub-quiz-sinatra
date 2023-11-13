@@ -1,11 +1,23 @@
-# Pub Quiz
-Few things in life can beat good times with friends - especially if it involves sharing a pint over a pub quiz! During these ✨unprecedented times✨ it can be a challenge to get loved ones together. That's why I brought the pub quiz to you! Anytime, anywhere - just grab your favourite beverage and settle in for some trivia fun.
+<div align="center">
+  <img src="./public/stylesheets/images/preview-gif.gif" alt="GIF Preview of Quiz Start">
+</div>
+<br>
+<br>
+
+# Pub Quiz 🍻
+Dive into the excitement of a pub quiz night right from the comfort of your browser with PubQuiz! Designed for instant enjoyment during game nights with friends, PubQuiz brings the classic trivia experience to your fingertips. Simply open it up in your browser, gather your friends, and let the trivia fun begin!
 
 <br>
 
-## The Task
-Create a prototype system for an online pub quiz. Users will be presented with questions and submit their answers. The system will calculate their score and present it to the user upon completion.
+## Current Version
+PubQuiz is a dynamic online quiz platform crafted with Sinatra, a lightweight Ruby web application framework. Leveraging Sinatra's simplicity and efficiency, PubQuiz delivers a seamless technical experience, ensuring a hassle-free trivia adventure every time you click open your browser. As an MVP, PubQuiz currently emphasises spontaneity and quick setup. The prototype system presents the users with questions and calculates their score based on their answers, presenting it to the user upon completion. Data is managed on the front-end (a constraint from the initial challenge) and is not persisted, getting cleared upon restarting the quiz..
 
+<br>
+
+## Future Features
+Looking ahead, the goal is for a more immersive experience for users. Future updates may include features such as user logins, the ability to create custom quizzes, session management, player invitations, teams and interactive scoreboards. PubQuiz aims to evolve into more than just a trivia platform — it's a streamlined hub where friends can unite, create, and enjoy trivia in a way that suits their unique preferences.
+
+<br>
 <br>
 
 ## How To Run
@@ -110,23 +122,30 @@ You can open your browser and go to [localhost:4567](localhost:4567) to start th
 <br>
 <br>
 
-## My Solution
-For this challenge, I chose the coding language I am most proficient in, which is Ruby. I considered making a Ruby on Rails project, but realised that the architecture provided by Rails might be overly complicated for the scope of the challenge and therefore be a hindrance rather than assistance. I revisited other frameworks I've learned about and though I never executed it previously, chose to opt for Sinatra; a DSL for creating web applications in Ruby. As it preserved a MVC pattern, I was able to apply my previous knowledge in structuring the project and achieved a more streamlined process than would be feasible with RoR.
-
-<br>
-
 ## Reflection
-I really enjoyed this challenge as it tested my ability to think outside the box. Though I've not worked with neither NodeJS nor Vue before, my understanding is that I probably could have come up with a more elegant and straightforward solution with these technologies. So, I had to think of how to meet the challenge specs with my current skillset, and ended up executing a framework I only knew about in theory, making this a great learning experience.
+This project kicked off as a coding challenge, pushing the boundaries of my skill set at the time. Despite the learning curve, I embraced the challenge, turning theory into practice.
 
 <br>
 
-As far as my code, I tried to keep it as DRY as possible but I see room for improvement, particularly in the front-end. I would have liked to build more dynamic components that did not require so many small tweaks and could have structured my CSS selectors better. It also would have been very nice to include JavaScript as it's a language I really enjoy working with, however I sadly did not have the time to delve into it.
+Fast forward to the present — my friends inspired me to see potential here. We were craving something between casual chatter and an all-out board game for when we get together, and that's in essence the spirit of a pub quiz. So, I envisioned Pub Quiz (a more clever branding TBD) as the perfect modern supplement to social occasions, striking a balance between engaging conversations and light-hearted gaming.
 
 <br>
 
-A shortcoming I realised I had as a developer was how much I got used to boilerplate code from my bootcamp experience. Our coding challenges during the bootcamp always came with a basic skeleton readily set up for us that we could simply build upon without too much effort. Though this was very time efficient in the context, I realised I need to improve in setting up projects from scratch so I have more freedom in creating things that I conjured up in my mind!
+Upon revisiting the project, I dedicated time to polish its design and broaden its scope beyond the original challenge. Although the code was already functional, fine-tuning details and cleaning up my code made it more robust and scalable.
+
+<br>
+
+Looking ahead, I am enthusiastic about implementing future features. The general concept in mind involves two angles - a library of quizzes in various categories and a 'Create Your Own' function. For the former the idea would be a traditional trivia quiz, for the latter a group of users would be able to add each of their questions to a session, which would then be randomised so that nobody answers their own, leaning more towards a fun party game in that case.
+
+<br>
+
+Apart from a good laugh, the ability to add custom quizzes also opens up possibilities for diverse applications, from celebratory events like birthdays to weddings, where a personalised quiz could be a wholesome surprise. Exploring features such as teams and participants, I aim to conceptualise engagement without tethering everyone to their screens, which is an important consideration. For user authentication, I plan to revisit my Rails education, exploring robust frameworks from past group projects.
+
+<br>
+
+The evolution of this project reflects not only technical growth but also a deeper understanding of its potential in the real world. It is a testament to the joy of continuous learning and the exciting prospects ahead.
 
 <br>
 
 ## Thank You
-I would like to take this opportunity to thank you for including me in this process. It has been a great pleasure attempting this challenge and I appreciate the learning experience. I'm looking forward to elaborating on my execution and getting your insight about what I can improve on. Many thanks!
+Thank you for visiting Pub Quiz and hope you enjoyed this project. If you have any questions or need further assistance, you can reach out to me, Gülce, at [gulcesakallioglu@gmail.com]. 
