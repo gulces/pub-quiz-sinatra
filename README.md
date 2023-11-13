@@ -10,8 +10,13 @@ Dive into the excitement of a pub quiz night right from the comfort of your brow
 <br>
 
 ## Current Version
-PubQuiz is a dynamic online quiz platform crafted with Sinatra, a lightweight Ruby web application framework. Leveraging Sinatra's simplicity and efficiency, PubQuiz delivers a seamless technical experience, ensuring a hassle-free trivia adventure every time you click open your browser. As an MVP, PubQuiz currently emphasises spontaneity and quick setup. The prototype system presents the users with questions and calculates their score based on their answers, presenting it to the user upon completion. Data is managed on the front-end (a constraint from the initial challenge) and is not persisted, getting cleared upon restarting the quiz..
+PubQuiz is a dynamic online quiz platform crafted with Sinatra, a lightweight Ruby web application framework. Leveraging Sinatra's simplicity and efficiency, PubQuiz delivers a seamless technical experience, ensuring a hassle-free trivia adventure every time you click open your browser. As an MVP, PubQuiz currently emphasises spontaneity and quick setup. The prototype system presents the users with questions and calculates their score based on their answers, presenting it to the user upon completion. Data is managed on the front-end (a constraint from the initial challenge) and is not persisted, getting cleared upon restarting the quiz.
 
+<br>
+<div align="center">
+  <img src="./public/stylesheets/images/quiz-demo.gif" alt="GIF Demo of Quiz">
+</div>
+<br>
 <br>
 
 ## Future Features
